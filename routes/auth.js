@@ -36,7 +36,7 @@ check('email').isEmail().withMessage('Please enter a valid email').custom((value
  })
 }).normalizeEmail(),body('password','password should be atleast 6 characters').isLength({min:6}).trim()
 ,body('confirmPassword').trim().custom((value, { req }) => {
-    console.log(value)
+    
     if(value !== req.body.password) {
         
         throw new Error('password have to match');

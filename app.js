@@ -15,6 +15,8 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const  csrf = require('csurf');
 const flash = require('connect-flash');
 const multer = require('multer');
+const helmet = require('helmet');
+
 
 const csrfprotection = csrf();
 
@@ -103,13 +105,15 @@ if (!req.session.user){
 })
 
 
-  
+ 
 
 
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(authRoutes);
+
+app.use(helmet());
 
 
 app.use('/500',errorController.get500);
@@ -137,7 +141,7 @@ sequelize
   
   .sync()
   .then(reuslt => {
-    app.listen(3000);
+    app.listen(process.env.PORT || 4000);
   })
   .catch(err => {
     console.log(err)

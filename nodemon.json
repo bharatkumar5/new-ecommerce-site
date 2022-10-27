@@ -1,0 +1,10 @@
+{
+"env":{
+    "username":"bharat",
+    "password":"test@123",
+    "mysqldb":"shop",
+    "secret":"mixtwunfptofxqez"
+
+}
+
+}

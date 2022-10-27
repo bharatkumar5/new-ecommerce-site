@@ -14,12 +14,12 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'bharatkumar18002@gmail.com',
-        pass: 'mixtwunfptofxqez'
+        pass: `${process.env.secret}`
 
     }
 })
 
-
+//mixtwunfptofxqez
 // const transporter =  nodemailer.createTransport({
 //     host: "smtp.mailtrap.io",
 //     port: 2525,
