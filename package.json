@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "ecom on node",
   "main": "app.js",
+  "engines": {
+    "node": "12.22.9"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production username=bharat password=test@123 mysqldb=shop secret=mixtwunfptofxqez node app.js",
