@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production username=bharat password=test@123 mysqldb=shop secret=mixtwunfptofxqez node app.js",
+    "start": "NODE_ENV=production username=root password=GExWVLHKBZ36yD7xKIBv mysqldb=railway secret=mixtwunfptofxqez node app.js",
     "start-server": "node app.js",
     "start:dev": "nodemon app.js"
   },
