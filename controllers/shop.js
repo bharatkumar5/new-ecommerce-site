@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const Order = require('../models/order');
 const pdfdocument = require('pdfkit');
-const items_per_page = 2;
+const items_per_page = 6;
 
 
 exports.getProducts = (req, res, next) => {
