@@ -1,16 +1,6 @@
 const {Sequelize} = require('sequelize');
 
-const sequelize = new Sequelize(`${process.env.mysqldb}`,`${process.env.username}`,`${process.env.password}`,{
-    dialect: 'mysql', 
-    host: 'containers-us-west-102.railway.app',
-    port: 6532,
-    logging: false
-    
-
-});
-
-
-// const sequelize = new Sequelize('railway','root','GExWVLHKBZ36yD7xKIBv',{
+// const sequelize = new Sequelize(`${process.env.mysqldb}`,`${process.env.username}`,`${process.env.password}`,{
 //     dialect: 'mysql', 
 //     host: 'containers-us-west-102.railway.app',
 //     port: 6532,
@@ -18,6 +8,16 @@ const sequelize = new Sequelize(`${process.env.mysqldb}`,`${process.env.username
     
 
 // });
+
+
+const sequelize = new Sequelize('railway','root','GExWVLHKBZ36yD7xKIBv',{
+    dialect: 'mysql', 
+    host: 'containers-us-west-102.railway.app',
+    port: 6532,
+    logging: false
+    
+
+});
 
 
 

@@ -17,7 +17,7 @@ const User = sequelize.define('user',{
 
     Role: {
         type: Sequelize.INTEGER,
-        allowNull:false,
+        allowNull:true,
         defaultValue:0
     }
 
