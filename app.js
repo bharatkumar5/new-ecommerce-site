@@ -77,6 +77,7 @@ app.use(csrfprotection);
 app.use(flash());
 
 app.use((req, res, next) =>{
+  res.locals.Isadmin = req.session.Role,
   res.locals.isAuthenticated = req.session.isloggedIn,
   res.locals.csrfToken =req.csrfToken()
 
@@ -141,7 +142,7 @@ sequelize
   
   .sync()
   .then(reuslt => {
-    app.listen(process.env.PORT || 4000);
+    app.listen(process.env.PORT || 7000);
   })
   .catch(err => {
     console.log(err)

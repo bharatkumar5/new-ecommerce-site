@@ -139,7 +139,9 @@ return res.status(422).render('auth/login', {
     }
 
     User.findOne({ where: { email: email } }).then(user => {
+          let role  = user.dataValues.Role;
 
+          console.log(user.dataValues.Role)
         if (!user) {
             req.flash('error','invalid email or password');
            
@@ -151,7 +153,7 @@ return res.status(422).render('auth/login', {
             if (domatch) {
                 
                 req.session.isloggedIn = true;
-              
+                req.session.Role = role;
                 req.session.user = user
             
                 return req.session.save(err => {

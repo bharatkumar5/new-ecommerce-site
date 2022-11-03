@@ -7,6 +7,9 @@ const Order = require('../models/order');
 const pdfdocument = require('pdfkit');
 const items_per_page = 6;
 
+let now = new Date();
+now =`${now.getDate()}/${now.getMonth()}/${now.getFullYear()} Time:${now.getHours()-12}:${now.getMinutes()}:${now.getSeconds()}`
+
 
 exports.getProducts = (req, res, next) => {
   const page = +req.query.page || 1;
@@ -289,11 +292,11 @@ exports.getinvoice = (req,res,next) =>{
       doc.pipe(res)
  
       doc
-        .fontSize(26)
+        .fontSize(20)
         .text("Invoice", {
           underline: true
         })
- 
+        doc.text(`                                     Date:${now}`)
       doc.text("------------------------------------------")
       order.dataValues.products.forEach((prod) => {
 
