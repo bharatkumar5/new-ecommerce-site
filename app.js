@@ -142,7 +142,7 @@ sequelize
   
   .sync()
   .then(reuslt => {
-    app.listen(process.env.PORT || 7000);
+    app.listen(process.env.PORT || 5000);
   })
   .catch(err => {
     console.log(err)

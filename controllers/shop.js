@@ -8,7 +8,7 @@ const pdfdocument = require('pdfkit');
 const items_per_page = 6;
 
 let now = new Date();
-now =`${now.getDate()}/${now.getMonth()}/${now.getFullYear()} Time:${now.getHours()-12}:${now.getMinutes()}:${now.getSeconds()}`
+now =`${now.getDate()}/${now.getMonth()}/${now.getFullYear()} Time:${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
 
 
 exports.getProducts = (req, res, next) => {

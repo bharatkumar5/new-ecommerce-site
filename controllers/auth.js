@@ -233,7 +233,7 @@ crypto.randomBytes(32,(error,buffer)=>{
             to: req.body.email,
             subject: 'reset password',
             html: `<p> you requested reset password </p>
-            click this  <a href="http://localhost:3000/reset/${token}">link</a>  to set new password
+            click this  <a href="https://childern-choice.herokuapp.com/reset/${token}">link</a>  to set new password
             `
          })
 
