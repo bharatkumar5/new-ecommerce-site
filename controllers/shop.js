@@ -75,7 +75,7 @@ Product.findAndCountAll().then(numproducts =>{
       return Product.findAll({limit:items_per_page,offset: (page-1)*items_per_page});
 
 }).then(products => {
-
+console.log(products.product)
 res.render('shop/index',{
     prods: products,
     pageTitle: 'Shop',

@@ -1,12 +1,9 @@
 {
-"env":{
-    "username":"bharat",
-    "password":"test@123",
-    "mysqldb":"shop",
-    "secret":"mixtwunfptofxqez"
-
+  "env": {
+    "username": "uchjtntaxodfoz02",
+    "password": "HkMcK1yiiliUFjkmzgP0",
+    "mysqldb": "brdsonhndiewiqvsveju",
+    "secret": "mixtwunfptofxqez",
+    "hostname": "brdsonhndiewiqvsveju-mysql.services.clever-cloud.com"
+  }
 }
-
-}
-
-
