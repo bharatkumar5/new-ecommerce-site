@@ -1,4 +1,7 @@
+const path = require("path");
 const { Sequelize } = require("sequelize");
+const dotenv = require("dotenv");
+dotenv.config({ path: "./confi.env" });
 
 // const sequelize = new Sequelize(`${process.env.mysqldb}`,`${process.env.username}`,`${process.env.password}`,{
 //     dialect: 'mysql',
@@ -23,7 +26,3 @@ const sequelize = new Sequelize(
 module.exports = sequelize;
 
 // mysql -hcontainers-us-west-69.railway.app -uroot -p******** --port 7641 --protocol=TCP railway
-
-// mysql://root:ORKl3ZqDJL3Og2mFNutt@containers-us-west-69.railway.app:7641/railway
-
-// "start": "NODE_ENV=production username=root password=GExWVLHKBZ36yD7xKIBv mysqldb=railway secret=mixtwunfptofxqez node app.js",
