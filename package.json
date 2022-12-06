@@ -4,7 +4,7 @@
   "description": "ecom on node",
   "main": "app.js",
   "engines": {
-    "node": "12.22.9"
+    "node": "18.12.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
