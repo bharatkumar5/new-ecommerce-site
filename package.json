@@ -2,7 +2,7 @@
   "name": "basic-ecom",
   "version": "1.0.0",
   "description": "ecom on node",
-  "main": "app.js",
+  "main": "database.js",
   "engines": {
     "node": "18.12.1"
   },
