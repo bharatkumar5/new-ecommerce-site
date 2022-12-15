@@ -4,16 +4,24 @@
   "description": "ecom on node",
   "main": "app.js",
   "engines": {
-    "node": "12.22.9"
+    "node": "18.12.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production node app.js",
-    "start-server": "node app.js",
+    "build": "echo \"No build specified\" && exit 1",
+    "test": "echo \"No test specified\" && exit 1",
+    "start": "node app.js",
     "start:dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharatkumar5/new-ecommerce-site.git"
   },
   "author": "bharat",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bharatkumar5/new-ecommerce-site/issues"
+  },
+  "homepage": "https://github.com/bharatkumar5/new-ecommerce-site#readme",
   "devDependencies": {
     "nodemon": "^2.0.19"
   },
